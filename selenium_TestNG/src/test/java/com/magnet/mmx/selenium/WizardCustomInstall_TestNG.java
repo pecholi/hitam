@@ -368,12 +368,12 @@ public void setUp() throws Exception {
     System.out.println("Assert Forgot-Password");
     Thread.sleep(5000);
     //    assertTrue(isElementPresent(By.linkText("Invite-Confirmation")));
-    try {
-        AssertJUnit.assertEquals("Invite-Confirmation", driver.findElement(By.xpath(".//*[@id='cms-menu']/ul/li[3]/a")).getText());
-      } catch (Error e) {
-        verificationErrors.append(e.toString());
-      }
-    System.out.println("Assert Invite-Confirmation");
+//    try {
+//        AssertJUnit.assertEquals("Invite-Confirmation", driver.findElement(By.xpath(".//*[@id='cms-menu']/ul/li[3]/a")).getText());
+//      } catch (Error e) {
+//        verificationErrors.append(e.toString());
+//      }
+//    System.out.println("Assert Invite-Confirmation");
     
     //ok buttton
     driver.findElement(By.cssSelector("#general-alert > div.modal-dialog > div.modal-content > div.modal-footer > button.btn.btn-primary")).click();
